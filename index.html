@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Modern Restaurant</title>
+ 
+  <!-- Swiper CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
+  <!-- Your Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <div class="logo">Elijah's Kitchen</div>
+
+    <!-- Hamburger Button -->
+    <button id="hamburger" aria-label="Open Menu">
+      <svg id="menu-icon" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+     <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#specials">Specials</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reservations">Reservations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <button id="closeSidebar" aria-label="Close Menu">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#specials">Specials</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reservations">Reservations</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+
+
+  <!-- Hero Swiper Section -->
+  <section class="hero">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('coffee.jpg');"></div>
+        <!-- Slide 2 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('food-1.jpg');"></div>
+        <!-- Slide 3 -->
+        <div class="swiper-slide hero-slide" style="background-image: url('food-2.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('hamburger.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('hummus.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('italian-food.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('pancakes.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('pizza-1.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('pizza-2.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('plate.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('sushi.jpg');"></div>
+        <div class="swiper-slide hero-slide" style="background-image: url('vegan.jpg');"></div>
+      </div>
+
+      <!-- Overlay content -->
+      <div class="hero-content">
+        <h1>Welcome to Elijah's Kitchen</h1>
+        <p>Modern flavors. Timeless quality.</p>
+        <a href="#menu" class="cta-button">View Menu</a>
+      </div>
+    </div>
+  </section>
+  
+<div class="section-divider-svg">
+  <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+    <path d="M0,0V46.29c47.37,22.55,103.14,34.78,159,34.78
+             s111.63-12.23,159-34.78C422.63,23.74,478.4,11.51,
+             534,11.51s111.37,12.23,159,34.78c47.63,22.55,
+             103.4,34.78,159,34.78s111.63-12.23,159-34.78V0Z"
+          fill="#0ff"></path>
+  </svg>
+</div>
+  <section id="about">
+  <div class="about-container">
+    <div class="about-image">
+      <video src="video.mp4" autoplay muted loop playsinline alt="Our Chef at Work"></video>
+    </div>
+    <div class="about-text">
+      <h2>About Us</h2>
+      <p>
+        Welcome to Elijah's Kitchen, where modern flavors meet timeless tradition. Our chefs
+        craft unforgettable dishes with passion and precision. Enjoy an elevated dining
+        experience in a warm, inviting atmosphere.
+      </p>
+      <p class="signature">Since 2024</p>
+    </div>
+  </div>
+</section>
+<hr class="section-divider">
+<section id="menu">
+  <h2>Our Menu</h2>
+  <p class="menu-tagline">Delicious. Authentic. Made with love.</p>
+
+  <div class="menu-category">
+    <h3>Starters</h3>
+    <div class="menu-item">
+    <img src="images (37).jpeg">
+    <div class="item-details">
+      <span class="item-name">Asun</span>
+      <span class="item-description">Peppery roasted goat meat cubes tossed in hot pepper sauce</span>
+      <span class="item-price">₦2000</span>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="images (38).jpeg">
+    <div class="item-details">
+      <span class="item-name">Chicken Wings</span>
+      <span class="item-description">Crispy wings tossed in hot pepper sauce</span>
+      <span class="item-price">₦4000</span>
+    </div>
+    </div>
+  <div class="menu-category">
+    <h3>Mains</h3>
+    <div class="menu-item">
+    <img src="images (45).jpeg">
+    <div class="item-details">
+      <span class="item-name">Jollof Rice</span>
+      <span class="item-description">Nigerian rice simmered in spicy tomato sauce</span>
+      <span class="item-price">₦2500</span>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="images (55).jpeg">
+    <div class="item-details">
+      <span class="item-name">Fried Rice</span>
+      <span class="item-description">Stir-fried rice with vegetables</span>
+      <span class="item-price">₦2500</span>
+    </div>
+    </div>
+
+  <div class="menu-category">
+    <h3>Desserts</h3>
+    <div class="menu-item">
+    <img src="images (56).jpeg">
+    <div class="item-details">
+      <span class="item-name">Ice Cream</span>
+      <span class="item-description">Choice of flavors served in a cup or cone</span>
+      <span class="item-price">₦800</span>
+    </div>
+    </div>
+    
+
+  <div class="menu-category">
+    <h3>Drinks</h3>
+    <div class="menu-item">
+    <img src="images (57).jpeg">
+    <div class="item-details">
+      <span class="item-name">Soft Drinks</span>
+      <span class="item-description">Coca-Cola, Fanta, Sprite, Pepsi served chilled.</span>
+      <span class="item-price">₦500</span>
+    </div>
+    </div>
+    <div class="menu-item">
+    <img src="images (58).jpeg">
+    <div class="item-details">
+      <span class="item-name">Beer</span>
+      <span class="item-description">Local and international options like Star, Heineken, Gulder.</span>
+      <span class="item-price">₦800-₦1000</span>
+    </div>
+    </div>
+
+  <a href="Menu.html"><button class="menu-cta">View Full Menu</button></a>
+</section>
+<hr class="section-divider">
+<section class="specials" id="specials">
+  <h2 class="section-title">Today's Specials</h2>
+  <p class="section-description">Hand-picked dishes recommended by our chef</p>
+
+  <div class="swiper specials-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide special-slide">
+        <img src="images (45).jpeg" alt="Seared Salmon">
+        <div class="special-details">
+          <h3>Jollof Rice</h3>
+          <p>Nigerian rice simmered in spicy tomato sauce.</p>
+          <span class="special-price">₦2500</span>
+          <a class="order-btn" href="menu.html?filter=Jollof%20Rice">Order</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide special-slide">
+        <img src="images (55).jpeg" alt="Ribeye Steak">
+        <div class="special-details">
+          <h3>Fried Rice</h3>
+          <p>Stir-fried rice with vegetables</p>
+          <span class="special-price">₦2500</span>
+           <a class="order-btn" href="menu.html?filter=Fried%20Rice">Order</a>
+        </div>
+      </div>
+
+      <div class="swiper-slide special-slide">
+        <img src="images (48).jpeg" alt="Truffle Pasta">
+        <div class="special-details">
+          <h3>Pounded Yam</h3>
+          <p>Melon seed soup with meats and swallow.</p>
+          <span class="special-price">₦3500</span>
+           <a class="order-btn" href="menu.html?filter=Pounded%20Yam">Order</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Swiper controls -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+<hr class="section-divider">
+<section class="gallery" id="gallery">
+  <h2 class="section-title">Gallery</h2>
+  <p class="section-description">A glimpse into our restaurant and dishes</p>
+
+  <div class="gallery-horizontal">
+    <div class="gallery-item">
+  <a href="photo-1670603999602-af0ddca5e5bb.jpeg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="photo-1670603999602-af0ddca5e5bb.jpeg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="photo-1728501650832-57bafbf10a37.jpeg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="photo-1728501650832-57bafbf10a37.jpeg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="photo-1526069631228-723c945bea6b.jpeg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="photo-1526069631228-723c945bea6b.jpeg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="pexels-reneterp-1581384.jpg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="pexels-reneterp-1581384.jpg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="photo-1583354608715-177553a4035e.jpeg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="photo-1583354608715-177553a4035e.jpeg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="premium_photo-1670984939096-f3cfd48c7408.jpeg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="premium_photo-1670984939096-f3cfd48c7408.jpeg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="pexels-valeriya-827528.jpg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="pexels-valeriya-827528.jpg" alt="Dish 1">
+  </a>
+</div>
+  <div class="gallery-item">
+  <a href="premium_photo-1686090448301-4c453ee74718.jpeg" data-lightbox="restaurant-gallery" data-title="Delicious Dish">
+    <img src="premium_photo-1686090448301-4c453ee74718.jpeg" alt="Dish 1">
+  </a>
+</div>
+  </div>
+</section>
+<hr class="section-divider">
+<section id="reservations" class="reservations">
+  <h2 class="section-title">Reserve Your Table</h2>
+  <p class="section-description">Plan your visit. Book your experience with us today.</p>
+ 
+  <form class="reservation-form" action="https://formspree.io/f/xanjgdjp" method="POST">
+    <div class="form-group">
+      <input type="text" name="name" placeholder="Full Name" required>
+    </div>
+    <div class="form-group">
+      <input type="email" name="email" placeholder="Email Address" required>
+    </div>
+    <div class="form-group">
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
+    </div>
+    <div class="form-group">
+      <input type="date" name="date" required>
+    </div>
+    <div class="form-group">
+      <input type="time" name="time" required>
+    </div>
+    <div class="form-group">
+      <input type="number" name="guests" placeholder="Number of Guests" required min="1">
+    </div>
+    <div class="form-group">
+      <textarea placeholder="Special Requests" name="requests"></textarea>
+    </div>
+    <button type="submit" class="reservation-btn">Book Now</button>
+  </form>
+</section>
+<hr class="section-divider">
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h2>Contact Us</h2>
+      <p><strong> Address:</strong> Basiri Basic Health Center, Ado-Ekiti, Nigeria</p>
+      <p><strong> Phone:</strong> <a href="tel:+2348130363021">+234 801 234 5678</a></p>
+      <p><strong> Email:</strong> <a href="mailto:info@elijahskitchen.com">info@elijahskitchen.com</a></p>
+      <p><strong> Hours:</strong> Mon-Sat: 10am - 10pm</p>
+    </div>
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.376964630412!2d5.2174389703866755!3d7.642549192318875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1047fb35d27ff7fb%3A0x79cd2f17703b1efa!2sBasiri%20Basic%20Health%20Centre!5e0!3m2!1sen!2sng!4v1751997719751!5m2!1sen!2sng"
+ width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer class="simple-footer">
+  <div class="footer-links">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#menu">Menu</a>
+    <a href="#specials">Specials</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#reservations">Reservations</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="footer-copy">
+    &copy; 2025 Elijah's Kitchen. All rights reserved.
+  </div>
+</footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js">
+      const specialsSwiper = new Swiper('.specials-swiper', {
+    loop: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    spaceBetween: 30,
+    slidesPerView: 1,
+    breakpoints: {
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      }
+    }
+  });
+  </script>
+
+  <!-- Swiper Config -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      effect: 'fade',
+      speed: 1000,
+    });
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

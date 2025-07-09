@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restaurant Menu</title>
+  <link rel="stylesheet" href="menu.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">Elijah's Kitchen</div>
+    <!-- Hamburger Button -->
+    <button id="hamburger" aria-label="Open Menu">
+      <svg id="menu-icon" viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12" />
+        <line x1="3" y1="6" x2="21" y2="6" />
+        <line x1="3" y1="18" x2="21" y2="18" />
+      </svg>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#specials">Specials</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#reservations">Reservations</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <!-- Sidebar -->
+  <div id="sidebar">
+    <button id="closeSidebar" aria-label="Close Menu">
+      <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#0ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="18" y1="6" x2="6" y2="18" />
+        <line x1="6" y1="6" x2="18" y2="18" />
+      </svg>
+    </button>
+
+    <ul>
+      <li><a href="index.html#home">Home</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#specials">Specials</a></li>
+      <li><a href="index.html#gallery">Gallery</a></li>
+      <li><a href="index.html#reservations">Reservations</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+  <!-- Hero/Header -->
+  <header class="menu-hero">
+    <h1>Our Delicious Menu</h1>
+    <p>Browse and place your order below</p>
+  </header>
+
+  <!-- Search Bar -->
+  <div class="menu-search">
+    <input type="text" id="searchInput" placeholder="Search for a dish...">
+  </div>
+
+  <!-- Main Content with Menu + Cart -->
+  <div class="menu-and-cart">
+    <!-- Menu -->
+    <div class="menu">
+      <h2>Starters</h2>
+
+      <div class="menu-item" data-name="Suya" data-price="1500">
+  <img src="images (39).jpeg">
+  <div class="item-details">
+    <span class="item-name">Suya</span>
+    <span class="item-description">Spicy grilled beef skewers with pepper mix.</span>
+  </div>
+  <span class="item-price">₦1500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Asun" data-price="2000">
+  <img src="images (37).jpeg">
+  <div class="item-details">
+    <span class="item-name">Asun</span>
+    <span class="item-description">Spicy roasted goat meat in pepper sauce.</span>
+  </div>
+  <span class="item-price">₦2000</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Peppered Snail" data-price="2500">
+  <img src="images (40).jpeg">
+  <div class="item-details">
+    <span class="item-name">Peppered Snail</span>
+    <span class="item-description">Tender snails cooked in rich pepper sauce.</span>
+  </div>
+  <span class="item-price">₦2500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Gizdodo" data-price="1800">
+  <img src="images (41).jpeg">
+  <div class="item-details">
+    <span class="item-name">Gizdodo</span>
+    <span class="item-description">Gizzard and plantain in spicy sauce.</span>
+  </div>
+  <span class="item-price">₦1800</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Meat Pie" data-price="700">
+  <img src="images (42).jpeg">
+  <div class="item-details">
+    <span class="item-name">Meat Pie</span>
+    <span class="item-description">Golden pastry with minced meat filling.</span>
+  </div>
+  <span class="item-price">₦700</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Pepper Soup" data-price="2000">
+  <img src="images (44).jpeg">
+  <div class="item-details">
+    <span class="item-name">Pepper Soup</span>
+    <span class="item-description">Spicy, aromatic broth with goat or fish.</span>
+  </div>
+  <span class="item-price">₦2000</span>
+  <button class="order-btn">Order</button>
+</div>
+
+      <h2>Mains</h2>
+      <div class="menu-item" data-name="Jollof Rice" data-price="2500">
+  <img src="images (45).jpeg">
+  <div class="item-details">
+    <span class="item-name">Jollof Rice</span>
+    <span class="item-description">Classic spicy tomato rice.</span>
+  </div>
+  <span class="item-price">₦2500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+ <div class="menu-item" data-name="Fried Rice" data-price="2500">
+  <img src="images (55).jpeg">
+  <div class="item-details">
+    <span class="item-name">Fried Rice</span>
+    <span class="item-description">Stir-fried rice with vegetables</span>
+  </div>
+  <span class="item-price">₦2500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Ofada Rice" data-price="3000">
+  <img src="images (46).jpeg">
+  <div class="item-details">
+    <span class="item-name">Ofada Rice</span>
+    <span class="item-description">Local rice with green pepper sauce & meats.</span>
+  </div>
+  <span class="item-price">₦3000</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Yam Porridge (Asaro)" data-price="2000">
+  <img src="images (47).jpeg">
+  <div class="item-details">
+    <span class="item-name">Yam Porridge (Asaro)</span>
+    <span class="item-description">Soft yam in pepper sauce with palm oil.</span>
+  </div>
+  <span class="item-price">₦2000</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Egusi Soup with Pounded Yam" data-price="3500">
+  <img src="images (48).jpeg">
+  <div class="item-details">
+    <span class="item-name">Pounded Yam</span>
+    <span class="item-description">Melon seed soup with meats and swallow.</span>
+  </div>
+  <span class="item-price">₦3500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Okra Soup with Eba" data-price="3000">
+  <img src="images (49).jpeg">
+  <div class="item-details">
+    <span class="item-name">Eba</span>
+    <span class="item-description">Slimy okra soup served with eba swallow.</span>
+  </div>
+  <span class="item-price">₦3000</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Shawarma" data-price="2500">
+  <img src="images (50).jpeg">
+  <div class="item-details">
+    <span class="item-name">Shawarma</span>
+    <span class="item-description">Spiced chicken or beef wrapped with veggies.</span>
+  </div>
+  <span class="item-price">₦2500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+
+      <h2>Desserts</h2>
+     <div class="menu-item" data-name="Puff-Puff" data-price="500">
+  <img src="images (51).jpeg">
+  <div class="item-details">
+    <span class="item-name">Puff-Puff</span>
+    <span class="item-description">Sweet, fluffy fried dough balls.</span>
+  </div>
+  <span class="item-price">₦500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Chinchin" data-price="300">
+  <img src="images (52).jpeg">
+  <div class="item-details">
+    <span class="item-name">Chinchin</span>
+    <span class="item-description">Crunchy sweet fried dough pieces.</span>
+  </div>
+  <span class="item-price">₦300</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Fruit Salad" data-price="1000">
+  <img src="images (53).jpeg">
+  <div class="item-details">
+    <span class="item-name">Fruit Salad</span>
+    <span class="item-description">Fresh seasonal fruit mix served chilled.</span>
+  </div>
+  <span class="item-price">₦1000</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Cake Slice" data-price="1200">
+  <img src="images (54).jpeg">
+  <div class="item-details">
+    <span class="item-name">Cake Slice</span>
+    <span class="item-description">Moist slice of classic cake flavors.</span>
+  </div>
+  <span class="item-price">₦1200</span>
+  <button class="order-btn">Order</button>
+</div>
+<h2>Drinks</h2>
+<div class="menu-item" data-name="Zobo" data-price="500">
+  <img src="images (59).jpeg">
+  <div class="item-details">
+    <span class="item-name">Zobo</span>
+    <span class="item-description">Sweet hibiscus flower drink with spices.</span>
+  </div>
+  <span class="item-price">₦500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Chapman" data-price="1500">
+  <img src="images (60).jpeg">
+  <div class="item-details">
+    <span class="item-name">Chapman</span>
+    <span class="item-description">Fruity Nigerian mocktail with soda and bitters.</span>
+  </div>
+  <span class="item-price">₦1500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Palm Wine" data-price="700">
+  <img src="images (1).jpg">
+  <div class="item-details">
+    <span class="item-name">Palm Wine</span>
+    <span class="item-description">Sweet, natural fermented palm sap.</span>
+  </div>
+  <span class="item-price">₦700</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Soft Drink" data-price="500">
+  <img src="images (57).jpeg">
+  <div class="item-details">
+    <span class="item-name">Soft Drink</span>
+    <span class="item-description">Coke, Fanta, Sprite served chilled.</span>
+  </div>
+  <span class="item-price">₦500</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Malt Drink" data-price="700">
+  <img src="images (61).jpeg">
+  <div class="item-details">
+    <span class="item-name">Malt Drink</span>
+    <span class="item-description">Classic non-alcoholic malt beverage.</span>
+  </div>
+  <span class="item-price">₦700</span>
+  <button class="order-btn">Order</button>
+</div>
+
+<div class="menu-item" data-name="Bottled Water" data-price="300">
+  <img src="Stilles_Mineralwasser.jpg">
+  <div class="item-details">
+    <span class="item-name">Bottled Water</span>
+    <span class="item-description">Clean, refreshing bottled water.</span>
+  </div>
+  <span class="item-price">₦300</span>
+  <button class="order-btn">Order</button>
+</div>
+    <!-- Cart -->
+    <div class="cart">
+      <h2>Your Cart</h2>
+      <div id="cartItems">No items yet.</div>
+      <div class="cart-total">Total: $<span id="cartTotal">0</span></div>
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
+    const filter = params.get('filter');
+
+    if (filter) {
+      const items = document.querySelectorAll('.menu-item');
+      items.forEach(item => {
+        const name = item.getAttribute('data-name');
+        if (name.toLowerCase().includes(filter.toLowerCase())) {
+          item.style.display = 'flex'; // show
+        } else {
+          item.style.display = 'none'; // hide others
+        }
+      });
+    }
+  });
+</script>
+  <script src="menu.js"></script>
+</body>
+</html>
